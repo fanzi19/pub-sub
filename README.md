@@ -1,9 +1,9 @@
-Overview
+#Overview
 This project implements a Publish-Subscribe (Pub-Sub) system using C++, where publishers send messages to a broker, and subscribers receive messages from specific topics. Each message in the system is uniquely identified using a UUID to ensure accurate processing, including deduplication and tracking.
 
 The broker manages message routing between publishers and subscribers, ensuring that each message is delivered to the correct topic subscribers.
 
-Components
+#Components
 1. Broker
 Main Files: main.cpp, server.cpp, server.h
 The broker acts as a central entity that facilitates message delivery between publishers and subscribers.
@@ -30,7 +30,8 @@ Networking Utilities: network.cpp, network.h
 
 Implements socket communication logic for client-server interaction.
 Handles setting up sockets, binding them to IP addresses and ports, and managing incoming/outgoing data.
-Key Features
+
+#Key Features
 UUID-based Message Identification:
 
 Each message from the publisher is tagged with a UUID to ensure that the broker and subscribers can uniquely identify it.
